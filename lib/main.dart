@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/features/geolocation/presentation/pages/location/page.dart';
 
+import 'features/weather/presentation/pages/home/page.dart';
 import 'injection.dart' as di;
 
 void main() async {
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const LocationPage(),
       routes: {
+        '/weather': (context) => const WeatherPage(),
         '/location': (context) => const LocationPage(),
       },
     );
